@@ -1,8 +1,7 @@
+
 ## Finished App
 ![Finished App](https://github.com/londonappbrewery/Images/blob/master/Clima.gif)
 
-
-```
 
 ## Fix for App Transport Security Override
 
@@ -21,4 +20,3 @@
 		</dict>
 	</dict>
 ```
-
