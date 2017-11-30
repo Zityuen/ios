@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-DemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="databaseDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="2" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHU-33-Y14">
+                                <rect key="frame" x="308" y="162" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="water"/>
+                                <connections>
+                                    <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HA4-GP-FPJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7T-iP-w3q">
+                                <rect key="frame" x="97" y="162" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="soil"/>
+                                <connections>
+                                    <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kt8-4c-gUT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdN-Da-ooH">
+                                <rect key="frame" x="510" y="162" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="temp"/>
+                                <connections>
+                                    <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tIn-CN-3HV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mio-bs-c7f"/>
+                    <connections>
+                        <segue destination="4KP-Va-Ezr" kind="show" identifier="Soil" id="3bQ-uH-ktD"/>
+                        <segue destination="aKJ-NB-4u3" kind="show" identifier="Air" id="4MB-rK-HSk"/>
+                        <segue destination="HeR-8v-232" kind="show" identifier="Temp" id="Wb2-cs-UZs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="389.95502248875567" y="-12"/>
+        </scene>
+        <!--Air View Controller-->
+        <scene sceneID="Clb-7N-6Ho">
+            <objects>
+                <viewController id="aKJ-NB-4u3" customClass="AirViewController" customModule="databaseDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uyd-KZ-alW">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tcO-Pw-HRL" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="65" width="667" height="310"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="310" id="IYn-bw-5ax"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eG1-th-FNA">
+                                <rect key="frame" x="20" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="BackPressed:" destination="aKJ-NB-4u3" eventType="touchUpInside" id="GNZ-d3-cSM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tcO-Pw-HRL" firstAttribute="leading" secondItem="o92-Xx-yTW" secondAttribute="leading" id="SjA-mD-j1K"/>
+                            <constraint firstItem="tcO-Pw-HRL" firstAttribute="bottom" secondItem="o92-Xx-yTW" secondAttribute="bottom" id="cBk-4S-gSi"/>
+                            <constraint firstItem="tcO-Pw-HRL" firstAttribute="trailing" secondItem="o92-Xx-yTW" secondAttribute="trailing" id="gKJ-r2-mFK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="o92-Xx-yTW"/>
+                    </view>
+                    <connections>
+                        <outlet property="lineChartView" destination="tcO-Pw-HRL" id="b3k-ea-N0v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cKQ-kD-gUy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="389.95502248875567" y="784.79999999999995"/>
+        </scene>
+        <!--Temp View Controller-->
+        <scene sceneID="FtZ-8e-giT">
+            <objects>
+                <viewController id="HeR-8v-232" customClass="TempViewController" customModule="databaseDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y2O-7d-xWs">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iXj-qT-yOe" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="65" width="667" height="310"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="310" id="Y2G-5T-4S8"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCP-Je-hXG">
+                                <rect key="frame" x="20" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="BackPressed:" destination="HeR-8v-232" eventType="touchUpInside" id="YjK-e1-7bp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iXj-qT-yOe" firstAttribute="trailing" secondItem="hfl-Cl-171" secondAttribute="trailing" id="9T3-3y-mJQ"/>
+                            <constraint firstItem="iXj-qT-yOe" firstAttribute="bottom" secondItem="hfl-Cl-171" secondAttribute="bottom" id="bDP-77-t21"/>
+                            <constraint firstItem="iXj-qT-yOe" firstAttribute="leading" secondItem="hfl-Cl-171" secondAttribute="leading" id="fDx-Ng-Pk3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hfl-Cl-171"/>
+                    </view>
+                    <connections>
+                        <outlet property="lineChartView" destination="iXj-qT-yOe" id="nQC-lL-kOE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bz0-PP-oVU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052.9235382308846" y="784.79999999999995"/>
+        </scene>
+        <!--Soil View Controller-->
+        <scene sceneID="Mae-u1-bXc">
+            <objects>
+                <viewController id="4KP-Va-Ezr" customClass="SoilViewController" customModule="databaseDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2dI-4g-Q4Q">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VTR-eX-ffn" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="65" width="667" height="310"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="310" id="rRr-Xa-773"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rr6-j7-9CW">
+                                <rect key="frame" x="20" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="BackPressed:" destination="4KP-Va-Ezr" eventType="touchUpInside" id="INL-kT-Ipu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VTR-eX-ffn" firstAttribute="leading" secondItem="4QT-PD-nZv" secondAttribute="leading" id="8JD-bU-5Ns"/>
+                            <constraint firstItem="VTR-eX-ffn" firstAttribute="trailing" secondItem="4QT-PD-nZv" secondAttribute="trailing" id="LGk-gN-hZi"/>
+                            <constraint firstItem="VTR-eX-ffn" firstAttribute="bottom" secondItem="4QT-PD-nZv" secondAttribute="bottom" id="S14-He-aV0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4QT-PD-nZv"/>
+                    </view>
+                    <connections>
+                        <outlet property="lineChartView" destination="VTR-eX-ffn" id="F0I-wM-z9Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2V0-sg-Sp2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-278.41079460269867" y="784.79999999999995"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="soil" width="76" height="76"/>
+        <image name="temp" width="76" height="76"/>
+        <image name="water" width="76" height="76"/>
+    </resources>
+</document>
