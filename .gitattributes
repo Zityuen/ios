@@ -1,2 +1,4 @@
 *.mlmodel filter=lfs diff=lfs merge=lfs -text
 plantCarer/Pods/Realm/core/*.a filter=lfs diff=lfs merge=lfs -text
+*.h linguist-language=swift
+*.cpp linguist-language=swift  
