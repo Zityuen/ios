@@ -3,3 +3,4 @@ plantCarer/Pods/Realm/core/*.a filter=lfs diff=lfs merge=lfs -text
 *.h linguist-language=swift
 *.cpp linguist-language=swift  
 *.m linguist-language=swift  
+*.modulemap linguist-language=swift  
