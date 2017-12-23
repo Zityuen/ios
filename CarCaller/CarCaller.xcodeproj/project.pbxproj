@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3E082B35991EB26601FC88C2 /* Pods_CarCaller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2658F55A3C304B04EE4807B7 /* Pods_CarCaller.framework */; };
+		8B36E5591FEE265F002E45D3 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B36E5581FEE265F002E45D3 /* UIViewExt.swift */; };
+		8B36E55B1FEE32FC002E45D3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B36E55A1FEE32FC002E45D3 /* LoginVC.swift */; };
+		8B36E55D1FEE37F7002E45D3 /* RoundCornerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B36E55C1FEE37F7002E45D3 /* RoundCornerTextField.swift */; };
 		8BA01E111FEA5ED700A72A97 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA01E101FEA5ED700A72A97 /* GradientView.swift */; };
 		8BA4B4131FEAEEC7004D006E /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA4B4121FEAEEC7004D006E /* RoundImageView.swift */; };
 		8BA4B4151FEAEF7E004D006E /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA4B4141FEAEF7E004D006E /* RoundedShadowView.swift */; };
@@ -18,11 +21,17 @@
 		8BBFE67B1FEA504300FC8546 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BBFE6791FEA504300FC8546 /* Main.storyboard */; };
 		8BBFE6801FEA504300FC8546 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BBFE67E1FEA504300FC8546 /* LaunchScreen.storyboard */; };
 		8BC8120B1FEB53E300221447 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BC8120A1FEB53E300221447 /* Images.xcassets */; };
+		8BC8120F1FEB5B3000221447 /* LeftSidePanelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC8120E1FEB5B3000221447 /* LeftSidePanelVC.swift */; };
+		8BC812111FEB5E1B00221447 /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC812101FEB5E1B00221447 /* ContainerVC.swift */; };
+		8BC812141FEB790200221447 /* CenterVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC812131FEB790200221447 /* CenterVCDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2658F55A3C304B04EE4807B7 /* Pods_CarCaller.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarCaller.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7065A52309B7D7D7D5E9EDF8 /* Pods-CarCaller.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarCaller.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarCaller/Pods-CarCaller.release.xcconfig"; sourceTree = "<group>"; };
+		8B36E5581FEE265F002E45D3 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		8B36E55A1FEE32FC002E45D3 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		8B36E55C1FEE37F7002E45D3 /* RoundCornerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCornerTextField.swift; sourceTree = "<group>"; };
 		8BA01E101FEA5ED700A72A97 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		8BA4B4121FEAEEC7004D006E /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
 		8BA4B4141FEAEF7E004D006E /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
@@ -35,6 +44,9 @@
 		8BBFE67F1FEA504300FC8546 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BBFE6811FEA504400FC8546 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BC8120A1FEB53E300221447 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8BC8120E1FEB5B3000221447 /* LeftSidePanelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSidePanelVC.swift; sourceTree = "<group>"; };
+		8BC812101FEB5E1B00221447 /* ContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
+		8BC812131FEB790200221447 /* CenterVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterVCDelegate.swift; sourceTree = "<group>"; };
 		A2754860E2974B6D2A7C4908 /* Pods-CarCaller.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarCaller.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarCaller/Pods-CarCaller.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,9 +79,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8B36E5571FEE264C002E45D3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8B36E5581FEE265F002E45D3 /* UIViewExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		8BA01E0D1FEA5EAA00A72A97 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8BBFE6771FEA504300FC8546 /* HomeVC.swift */,
+				8BC8120E1FEB5B3000221447 /* LeftSidePanelVC.swift */,
+				8BC812101FEB5E1B00221447 /* ContainerVC.swift */,
+				8B36E55A1FEE32FC002E45D3 /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -82,6 +106,7 @@
 				8BA4B4141FEAEF7E004D006E /* RoundedShadowView.swift */,
 				8BA4B4161FEAF09E004D006E /* CIrcleView.swift */,
 				8BA4B4181FEAF5F1004D006E /* RoundedShadowButton.swift */,
+				8B36E55C1FEE37F7002E45D3 /* RoundCornerTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -114,17 +139,26 @@
 		8BBFE6741FEA504300FC8546 /* CarCaller */ = {
 			isa = PBXGroup;
 			children = (
+				8B36E5571FEE264C002E45D3 /* Extensions */,
+				8BC812121FEB78DF00221447 /* Protocols */,
 				8BA01E0F1FEA5EB700A72A97 /* Model */,
 				8BA01E0E1FEA5EB200A72A97 /* View */,
 				8BA01E0D1FEA5EAA00A72A97 /* Controller */,
 				8BBFE6751FEA504300FC8546 /* AppDelegate.swift */,
-				8BBFE6771FEA504300FC8546 /* HomeVC.swift */,
 				8BBFE6791FEA504300FC8546 /* Main.storyboard */,
 				8BBFE67E1FEA504300FC8546 /* LaunchScreen.storyboard */,
 				8BBFE6811FEA504400FC8546 /* Info.plist */,
 				8BC8120A1FEB53E300221447 /* Images.xcassets */,
 			);
 			path = CarCaller;
+			sourceTree = "<group>";
+		};
+		8BC812121FEB78DF00221447 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8BC812131FEB790200221447 /* CenterVCDelegate.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,12 +298,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BC812141FEB790200221447 /* CenterVCDelegate.swift in Sources */,
 				8BA4B4191FEAF5F1004D006E /* RoundedShadowButton.swift in Sources */,
+				8B36E55B1FEE32FC002E45D3 /* LoginVC.swift in Sources */,
 				8BBFE6781FEA504300FC8546 /* HomeVC.swift in Sources */,
+				8B36E55D1FEE37F7002E45D3 /* RoundCornerTextField.swift in Sources */,
 				8BA4B4131FEAEEC7004D006E /* RoundImageView.swift in Sources */,
+				8BC812111FEB5E1B00221447 /* ContainerVC.swift in Sources */,
+				8B36E5591FEE265F002E45D3 /* UIViewExt.swift in Sources */,
 				8BA4B4151FEAEF7E004D006E /* RoundedShadowView.swift in Sources */,
 				8BBFE6761FEA504300FC8546 /* AppDelegate.swift in Sources */,
 				8BA4B4171FEAF09E004D006E /* CIrcleView.swift in Sources */,
+				8BC8120F1FEB5B3000221447 /* LeftSidePanelVC.swift in Sources */,
 				8BA01E111FEA5ED700A72A97 /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
